@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>account</title>
+</head>
+<body>
+        {% if error %}
+			{{ error }}
+		{% endif %}
+		<form method="POST">
+			ID: <input type="text" name="user_id" /><br />
+            パスワード: <input type="text" name="password" /><br />
+            名前: <input type="text" name="name" /><br />
+			<input type="submit" value="登録"/>
+			<input type="reset" value="リセット"/>
+		</form>
+</body>
+</html>

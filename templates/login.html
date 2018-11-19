@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Login</title>
+	</head>
+	<body>
+		{% if error %}
+			{{ error }}
+		{% endif %}
+		<form method="POST">
+			ID: <input type="text" name="user_id" /><br />
+            パスワード: <input type="text" name="password" /><br />
+			<input type="submit" value="ログイン"/>
+			<input type="reset" value="リセット"/>
+		</form>
+	<a href="/account">
+		<button type="button" class="btn btn-default">新規アカウント作成</button>
+	</a>
+	</body>
+</html>
